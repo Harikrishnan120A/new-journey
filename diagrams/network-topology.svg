@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="satelliteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cellularGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="loraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1" />
+    </linearGradient>
+    <marker id="networkArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1976d2"/>
+    </marker>
+    <marker id="satelliteArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#673ab7"/>
+    </marker>
+    <marker id="meshArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff9800"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    EcoPlast-AI Network Topology & Communication Architecture
+  </text>
+  
+  <!-- Satellite Communication Layer -->
+  <ellipse cx="600" cy="100" rx="250" ry="40" fill="url(#satelliteGrad)" stroke="#673ab7" stroke-width="2"/>
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#673ab7">Satellite Network Layer</text>
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555">Iridium Constellation</text>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555">Global Coverage</text>
+  <text x="800" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555">Low Latency (40ms)</text>
+  
+  <!-- Cloud Infrastructure -->
+  <rect x="450" y="160" width="300" height="100" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="10"/>
+  <text x="600" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1976d2">Cloud Infrastructure</text>
+  
+  <!-- Cloud Services -->
+  <rect x="470" y="200" width="80" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="510" y="220" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1976d2">AI Engine</text>
+  
+  <rect x="560" y="200" width="80" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1976d2">Database</text>
+  
+  <rect x="650" y="200" width="80" height="30" fill="#fff" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="690" y="220" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1976d2">Analytics</text>
+  
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555">Load Balancer + Auto-scaling + 99.9% Uptime</text>
+  
+  <!-- Gateway Servers -->
+  <rect x="250" y="300" width="120" height="60" fill="#fff" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="310" y="325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">LoRaWAN Gateway</text>
+  <text x="310" y="340" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Range: 15km</text>
+  <text x="310" y="350" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Bandwidth: 50kbps</text>
+  
+  <rect x="420" y="300" width="120" height="60" fill="#fff" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="480" y="325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">4G/5G Base Station</text>
+  <text x="480" y="340" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Range: 5km</text>
+  <text x="480" y="350" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Bandwidth: 100Mbps</text>
+  
+  <rect x="590" y="300" width="120" height="60" fill="#fff" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="650" y="325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Mesh Controller</text>
+  <text x="650" y="340" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Self-healing</text>
+  <text x="650" y="350" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Dynamic routing</text>
+  
+  <rect x="760" y="300" width="120" height="60" fill="#fff" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="820" y="325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Satellite Terminal</text>
+  <text x="820" y="340" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Global backup</text>
+  <text x="820" y="350" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Emergency comm</text>
+  
+  <!-- Network Zones -->
+  <!-- Urban Zone -->
+  <rect x="50" y="420" width="280" height="180" fill="url(#cellularGrad)" stroke="#9c27b0" stroke-width="2" rx="10"/>
+  <text x="70" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9c27b0">Urban Deployment Zone</text>
+  
+  <!-- Urban Devices -->
+  <circle cx="120" cy="480" r="20" fill="#fff" stroke="#9c27b0" stroke-width="2"/>
+  <text x="120" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">SBP-01</text>
+  
+  <circle cx="180" cy="480" r="20" fill="#fff" stroke="#9c27b0" stroke-width="2"/>
+  <text x="180" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">SBP-02</text>
+  
+  <circle cx="240" cy="480" r="20" fill="#fff" stroke="#9c27b0" stroke-width="2"/>
+  <text x="240" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">SBP-03</text>
+  
+  <rect x="100" y="520" width="40" height="25" fill="#fff" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="120" y="537" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">SSP-U1</text>
+  
+  <rect x="180" y="520" width="40" height="25" fill="#fff" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="200" y="537" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">SSP-U2</text>
+  
+  <polygon points="100,570 130,555 160,570 130,585" fill="#fff" stroke="#9c27b0" stroke-width="1"/>
+  <text x="130" y="575" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">MRD-A</text>
+  
+  <polygon points="180,570 210,555 240,570 210,585" fill="#fff" stroke="#9c27b0" stroke-width="1"/>
+  <text x="210" y="575" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9c27b0">MRD-B</text>
+  
+  <!-- Rural Zone -->
+  <rect x="360" y="420" width="280" height="180" fill="url(#loraGrad)" stroke="#4caf50" stroke-width="2" rx="10"/>
+  <text x="380" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4caf50">Rural Deployment Zone</text>
+  
+  <!-- Rural Devices -->
+  <circle cx="420" cy="480" r="20" fill="#fff" stroke="#4caf50" stroke-width="2"/>
+  <text x="420" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#4caf50">SBP-04</text>
+  
+  <circle cx="500" cy="480" r="20" fill="#fff" stroke="#4caf50" stroke-width="2"/>
+  <text x="500" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#4caf50">SBP-05</text>
+  
+  <circle cx="580" cy="480" r="20" fill="#fff" stroke="#4caf50" stroke-width="2"/>
+  <text x="580" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#4caf50">SBP-06</text>
+  
+  <rect x="400" y="520" width="40" height="25" fill="#fff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="420" y="537" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#4caf50">SSP-R1</text>
+  
+  <rect x="540" y="520" width="40" height="25" fill="#fff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="560" y="537" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#4caf50">SSP-R2</text>
+  
+  <!-- Remote Zone -->
+  <rect x="670" y="420" width="280" height="180" fill="url(#satelliteGrad)" stroke="#673ab7" stroke-width="2" rx="10"/>
+  <text x="690" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#673ab7">Remote Deployment Zone</text>
+  
+  <!-- Remote Devices -->
+  <circle cx="730" cy="480" r="20" fill="#fff" stroke="#673ab7" stroke-width="2"/>
+  <text x="730" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#673ab7">SBP-07</text>
+  
+  <circle cx="810" cy="480" r="20" fill="#fff" stroke="#673ab7" stroke-width="2"/>
+  <text x="810" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#673ab7">SBP-08</text>
+  
+  <circle cx="890" cy="480" r="20" fill="#fff" stroke="#673ab7" stroke-width="2"/>
+  <text x="890" y="485" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#673ab7">SBP-09</text>
+  
+  <!-- Mesh Network Connections -->
+  <line x1="120" y1="500" x2="180" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  <line x1="180" y1="500" x2="240" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  <line x1="420" y1="500" x2="500" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  <line x1="500" y1="500" x2="580" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  <line x1="730" y1="500" x2="810" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  <line x1="810" y1="500" x2="890" y2="500" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#meshArrow)"/>
+  
+  <!-- Cross-zone mesh connections -->
+  <line x1="240" y1="480" x2="420" y2="480" stroke="#ff9800" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="580" y1="480" x2="730" y2="480" stroke="#ff9800" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Gateway Connections -->
+  <!-- Urban to 5G -->
+  <line x1="240" y1="460" x2="480" y2="360" stroke="#9c27b0" stroke-width="3" marker-end="url(#networkArrow)"/>
+  
+  <!-- Rural to LoRaWAN -->
+  <line x1="420" y1="460" x2="310" y2="360" stroke="#4caf50" stroke-width="3" marker-end="url(#networkArrow)"/>
+  
+  <!-- Remote to Satellite -->
+  <line x1="810" y1="460" x2="820" y2="360" stroke="#673ab7" stroke-width="3" marker-end="url(#satelliteArrow)"/>
+  
+  <!-- Gateway to Cloud -->
+  <line x1="310" y1="300" x2="500" y2="260" stroke="#1976d2" stroke-width="3" marker-end="url(#networkArrow)"/>
+  <line x1="480" y1="300" x2="550" y2="260" stroke="#1976d2" stroke-width="3" marker-end="url(#networkArrow)"/>
+  <line x1="650" y1="300" x2="600" y2="260" stroke="#1976d2" stroke-width="3" marker-end="url(#networkArrow)"/>
+  <line x1="820" y1="300" x2="650" y2="260" stroke="#1976d2" stroke-width="3" marker-end="url(#networkArrow)"/>
+  
+  <!-- Cloud to Satellite -->
+  <line x1="600" y1="160" x2="600" y2="140" stroke="#1976d2" stroke-width="3" marker-end="url(#satelliteArrow)"/>
+  
+  <!-- Security and Encryption Layer -->
+  <rect x="50" y="640" width="1100" height="120" fill="#fff8e1" stroke="#ff8f00" stroke-width="2" rx="10"/>
+  <text x="70" y="665" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff8f00">Security & Encryption Layer</text>
+  
+  <!-- Security Components -->
+  <rect x="80" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="155" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">End-to-End Encryption</text>
+  <text x="155" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">AES-256 + TLS 1.3</text>
+  <text x="155" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Perfect Forward Secrecy</text>
+  
+  <rect x="250" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="325" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">Authentication</text>
+  <text x="325" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">X.509 Certificates</text>
+  <text x="325" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Device Identity</text>
+  
+  <rect x="420" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="495" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">Network Segmentation</text>
+  <text x="495" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">VPN Tunnels</text>
+  <text x="495" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Firewall Rules</text>
+  
+  <rect x="590" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="665" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">Intrusion Detection</text>
+  <text x="665" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">AI-powered SIEM</text>
+  <text x="665" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Real-time Monitoring</text>
+  
+  <rect x="760" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="835" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">Redundancy</text>
+  <text x="835" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Multi-path routing</text>
+  <text x="835" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Failover protocols</text>
+  
+  <rect x="930" y="680" width="150" height="50" fill="#fff" stroke="#ff8f00" stroke-width="1" rx="5"/>
+  <text x="1005" y="700" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff8f00">Data Integrity</text>
+  <text x="1005" y="715" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Cryptographic Hashing</text>
+  <text x="1005" y="725" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Blockchain Ledger</text>
+  
+  <!-- Legend -->
+  <text x="1000" y="415" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Legend:</text>
+  <line x1="1000" y1="430" x2="1030" y2="430" stroke="#9c27b0" stroke-width="3"/>
+  <text x="1040" y="435" font-family="Arial, sans-serif" font-size="10" fill="#555">4G/5G Cellular</text>
+  
+  <line x1="1000" y1="445" x2="1030" y2="445" stroke="#4caf50" stroke-width="3"/>
+  <text x="1040" y="450" font-family="Arial, sans-serif" font-size="10" fill="#555">LoRaWAN</text>
+  
+  <line x1="1000" y1="460" x2="1030" y2="460" stroke="#673ab7" stroke-width="3"/>
+  <text x="1040" y="465" font-family="Arial, sans-serif" font-size="10" fill="#555">Satellite</text>
+  
+  <line x1="1000" y1="475" x2="1030" y2="475" stroke="#ff9800" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="1040" y="480" font-family="Arial, sans-serif" font-size="10" fill="#555">Mesh Network</text>
+  
+  <line x1="1000" y1="490" x2="1030" y2="490" stroke="#1976d2" stroke-width="3"/>
+  <text x="1040" y="495" font-family="Arial, sans-serif" font-size="10" fill="#555">Backbone</text>
+  
+  <!-- Performance Specifications -->
+  <text x="70" y="785" font-family="Arial, sans-serif" font-size="10" fill="#333">Network Performance: Latency: LoRaWAN (1-2s) | 4G/5G (&lt;100ms) | Satellite (&lt;500ms) | Mesh (&lt;50ms local)</text>
+</svg>

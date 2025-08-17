@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="detectionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="riskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc02;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffebee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcdd2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="responseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    <marker id="flowArrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#1976d2"/>
+    </marker>
+    <marker id="urgentArrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#d32f2f"/>
+    </marker>
+    <marker id="responseArrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#388e3c"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    EcoPlast-AI Health Protection Workflow
+  </text>
+  
+  <!-- Phase 1: Detection & Monitoring -->
+  <rect x="50" y="80" width="1100" height="120" fill="url(#detectionGrad)" stroke="#4caf50" stroke-width="2" rx="10"/>
+  <text x="70" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4caf50">Phase 1: Contamination Detection & Monitoring</text>
+  
+  <!-- Detection Sources -->
+  <rect x="80" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="155" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">Smart Bio-Pods</text>
+  <text x="155" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Hyperspectral analysis</text>
+  <text x="155" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Real-time detection</text>
+  
+  <rect x="250" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="325" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">Soil Sentinels</text>
+  <text x="325" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Underground monitoring</text>
+  <text x="325" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Contamination mapping</text>
+  
+  <rect x="420" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="495" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">Mobile Drones</text>
+  <text x="495" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Aerial surveillance</text>
+  <text x="495" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Rapid deployment</text>
+  
+  <rect x="590" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="665" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">Citizen Reports</text>
+  <text x="665" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Mobile app submissions</text>
+  <text x="665" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Photo validation</text>
+  
+  <rect x="760" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="835" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">PlasticVision AI</text>
+  <text x="835" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Pattern recognition</text>
+  <text x="835" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">95% accuracy</text>
+  
+  <rect x="930" y="120" width="150" height="60" fill="#fff" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="1005" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4caf50">Data Fusion</text>
+  <text x="1005" y="155" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Multi-source correlation</text>
+  <text x="1005" y="170" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Confidence scoring</text>
+  
+  <!-- Phase 2: Risk Assessment -->
+  <rect x="50" y="230" width="1100" height="120" fill="url(#riskGrad)" stroke="#ff9800" stroke-width="2" rx="10"/>
+  <text x="70" y="255" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff9800">Phase 2: Risk Assessment & Prioritization</text>
+  
+  <!-- Risk Assessment Components -->
+  <rect x="80" y="270" width="180" height="60" fill="#fff" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="170" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Contamination Level</text>
+  <text x="170" y="305" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Concentration analysis</text>
+  <text x="170" y="320" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Particle size/type</text>
+  
+  <rect x="280" y="270" width="180" height="60" fill="#fff" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="370" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Health Impact Score</text>
+  <text x="370" y="305" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Population exposure</text>
+  <text x="370" y="320" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Vulnerability assessment</text>
+  
+  <rect x="480" y="270" width="180" height="60" fill="#fff" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="570" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Spread Prediction</text>
+  <text x="570" y="305" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">EcoPredict modeling</text>
+  <text x="570" y="320" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Flow dynamics</text>
+  
+  <rect x="680" y="270" width="180" height="60" fill="#fff" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="770" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Priority Classification</text>
+  <text x="770" y="305" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Critical/High/Medium/Low</text>
+  <text x="770" y="320" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Response timeline</text>
+  
+  <rect x="880" y="270" width="200" height="60" fill="#fff" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="980" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Resource Allocation</text>
+  <text x="980" y="305" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Optimal deployment</text>
+  <text x="980" y="320" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Cost-benefit analysis</text>
+  
+  <!-- Decision Diamond -->
+  <polygon points="600,380 650,400 600,420 550,400" fill="#ffeb3b" stroke="#f57c00" stroke-width="2"/>
+  <text x="600" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#f57c00">Critical?</text>
+  
+  <!-- Phase 3: Alert Systems -->
+  <rect x="50" y="460" width="1100" height="120" fill="url(#alertGrad)" stroke="#d32f2f" stroke-width="2" rx="10"/>
+  <text x="70" y="485" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d32f2f">Phase 3: Alert Systems & Notifications</text>
+  
+  <!-- Emergency Response Branch -->
+  <rect x="80" y="500" width="200" height="60" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <text x="180" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">CRITICAL ALERT</text>
+  <text x="180" y="535" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Immediate response (&lt;5 min)</text>
+  <text x="180" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Emergency protocols</text>
+  
+  <!-- Health Authorities -->
+  <rect x="300" y="500" width="180" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1" rx="5"/>
+  <text x="390" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">Health Authorities</text>
+  <text x="390" y="535" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">API integration</text>
+  <text x="390" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Real-time reports</text>
+  
+  <!-- Population Alerts -->
+  <rect x="500" y="500" width="180" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1" rx="5"/>
+  <text x="590" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">Population Alerts</text>
+  <text x="590" y="535" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Mobile notifications</text>
+  <text x="590" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Emergency broadcast</text>
+  
+  <!-- Water Utilities -->
+  <rect x="700" y="500" width="180" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1" rx="5"/>
+  <text x="790" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">Water Utilities</text>
+  <text x="790" y="535" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Treatment adjustments</text>
+  <text x="790" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Source switching</text>
+  
+  <!-- Environmental Agencies -->
+  <rect x="900" y="500" width="180" height="60" fill="#fff" stroke="#d32f2f" stroke-width="1" rx="5"/>
+  <text x="990" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">Environmental Agencies</text>
+  <text x="990" y="535" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Regulatory compliance</text>
+  <text x="990" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Investigation support</text>
+  
+  <!-- Phase 4: Automated Response -->
+  <rect x="50" y="610" width="1100" height="120" fill="url(#responseGrad)" stroke="#1976d2" stroke-width="2" rx="10"/>
+  <text x="70" y="635" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976d2">Phase 4: Automated Remediation Response</text>
+  
+  <!-- Response Actions -->
+  <rect x="80" y="650" width="180" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="170" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Drone Dispatch</text>
+  <text x="170" y="685" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Swarm coordination</text>
+  <text x="170" y="700" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Targeted treatment</text>
+  
+  <rect x="280" y="650" width="180" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="370" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Bio-Pod Activation</text>
+  <text x="370" y="685" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Bacterial deployment</text>
+  <text x="370" y="700" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Optimized strains</text>
+  
+  <rect x="480" y="650" width="180" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="570" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Containment Barriers</text>
+  <text x="570" y="685" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Physical isolation</text>
+  <text x="570" y="700" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Spread prevention</text>
+  
+  <rect x="680" y="650" width="180" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="770" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Treatment Intensify</text>
+  <text x="770" y="685" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Enhanced filtration</text>
+  <text x="770" y="700" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Chemical treatment</text>
+  
+  <rect x="880" y="650" width="200" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="980" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">Continuous Monitoring</text>
+  <text x="980" y="685" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Effectiveness tracking</text>
+  <text x="980" y="700" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#555">Adaptive response</text>
+  
+  <!-- Feedback Loop -->
+  <rect x="50" y="760" width="1100" height="80" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" rx="10"/>
+  <text x="70" y="785" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#388e3c">Phase 5: Effectiveness Monitoring & Feedback Loop</text>
+  
+  <rect x="150" y="800" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="250" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">Remediation Assessment</text>
+  
+  <rect x="400" y="800" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="500" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">Algorithm Improvement</text>
+  
+  <rect x="650" y="800" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="750" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">Data Sharing</text>
+  
+  <rect x="900" y="800" width="200" height="30" fill="#fff" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="1000" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">System Optimization</text>
+  
+  <!-- Flow Arrows -->
+  <!-- Detection to Risk Assessment -->
+  <line x1="500" y1="200" x2="500" y2="270" stroke="#1976d2" stroke-width="3" marker-end="url(#flowArrow)"/>
+  
+  <!-- Risk Assessment to Decision -->
+  <line x1="600" y1="350" x2="600" y2="380" stroke="#1976d2" stroke-width="3" marker-end="url(#flowArrow)"/>
+  
+  <!-- Decision to Critical Alert -->
+  <line x1="550" y1="400" x2="280" y2="500" stroke="#d32f2f" stroke-width="4" marker-end="url(#urgentArrow)"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d32f2f">YES - Critical</text>
+  
+  <!-- Decision to Normal Alert -->
+  <line x1="650" y1="400" x2="800" y2="500" stroke="#ff9800" stroke-width="2" marker-end="url(#flowArrow)"/>
+  <text x="720" y="440" font-family="Arial, sans-serif" font-size="10" fill="#ff9800">NO - Standard</text>
+  
+  <!-- Alert to Response -->
+  <line x1="500" y1="580" x2="500" y2="650" stroke="#1976d2" stroke-width="3" marker-end="url(#flowArrow)"/>
+  
+  <!-- Response to Feedback -->
+  <line x1="600" y1="730" x2="600" y2="800" stroke="#388e3c" stroke-width="3" marker-end="url(#responseArrow)"/>
+  
+  <!-- Feedback to Detection (Continuous Loop) -->
+  <path d="M 150 815 Q 50 700 50 400 Q 50 150 155 150" fill="none" stroke="#388e3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#responseArrow)"/>
+  
+  <!-- Response Time Indicators -->
+  <rect x="50" y="860" width="1100" height="30" fill="#fff" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="70" y="880" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Response Times:</text>
+  <text x="200" y="880" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Critical: &lt;5 minutes</text>
+  <text x="350" y="880" font-family="Arial, sans-serif" font-size="10" fill="#ff9800">High: &lt;30 minutes</text>
+  <text x="480" y="880" font-family="Arial, sans-serif" font-size="10" fill="#1976d2">Medium: &lt;2 hours</text>
+  <text x="620" y="880" font-family="Arial, sans-serif" font-size="10" fill="#388e3c">Low: &lt;24 hours</text>
+  <text x="750" y="880" font-family="Arial, sans-serif" font-size="10" fill="#666">Effectiveness: 24/7 monitoring</text>
+  <text x="950" y="880" font-family="Arial, sans-serif" font-size="10" fill="#666">Coverage: 99.5% uptime</text>
+</svg>

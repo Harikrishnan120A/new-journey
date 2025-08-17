@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e1f5fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b3e5fc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="landGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f8e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcedc8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="urbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8bbd9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="agriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffecb3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f0f4f8"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    EcoPlast-AI Global Deployment Map
+  </text>
+  
+  <!-- Simulated Geographic Areas -->
+  
+  <!-- Ocean Areas -->
+  <rect x="50" y="100" width="400" height="300" fill="url(#oceanGrad)" stroke="#0277bd" stroke-width="2" rx="20"/>
+  <text x="250" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0277bd">Coastal & Marine Environment</text>
+  
+  <rect x="750" y="100" width="400" height="300" fill="url(#oceanGrad)" stroke="#0277bd" stroke-width="2" rx="20"/>
+  <text x="950" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0277bd">Open Ocean Zones</text>
+  
+  <!-- Urban Areas -->
+  <rect x="100" y="450" width="250" height="200" fill="url(#urbanGrad)" stroke="#c2185b" stroke-width="2" rx="15"/>
+  <text x="225" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c2185b">Urban Water Sources</text>
+  
+  <!-- Agricultural Areas -->
+  <rect x="400" y="450" width="300" height="200" fill="url(#agriGrad)" stroke="#f57c00" stroke-width="2" rx="15"/>
+  <text x="550" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f57c00">Agricultural Monitoring</text>
+  
+  <!-- Rural/Remote Areas -->
+  <rect x="750" y="450" width="300" height="200" fill="url(#landGrad)" stroke="#388e3c" stroke-width="2" rx="15"/>
+  <text x="900" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#388e3c">Remote Watershed Areas</text>
+  
+  <!-- Lake/River Systems -->
+  <ellipse cx="550" cy="250" rx="100" ry="50" fill="url(#oceanGrad)" stroke="#0288d1" stroke-width="2"/>
+  <text x="550" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#0288d1">Freshwater Systems</text>
+  
+  <!-- Device Deployments in Coastal & Marine -->
+  <!-- Smart Bio-Pods -->
+  <circle cx="150" cy="180" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-C01</text>
+  
+  <circle cx="200" cy="220" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-C02</text>
+  
+  <circle cx="350" cy="200" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="350" y="220" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-C03</text>
+  
+  <!-- Soil Sentinel Probes -->
+  <rect x="120" y="250" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="128" y="275" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#f57c00">SSP-C01</text>
+  
+  <rect x="180" y="280" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="188" y="305" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#f57c00">SSP-C02</text>
+  
+  <rect x="320" y="260" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="328" y="285" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#f57c00">SSP-C03</text>
+  
+  <!-- Mobile Drones -->
+  <polygon points="280,160 300,150 320,160 300,170" fill="#9c27b0" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="300" y="185" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#7b1fa2">MRD-C01</text>
+  
+  <!-- Coastal Monitoring Details -->
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="10" fill="#555">• Tidal zone monitoring</text>
+  <text x="70" y="365" font-family="Arial, sans-serif" font-size="10" fill="#555">• Estuary protection</text>
+  <text x="70" y="380" font-family="Arial, sans-serif" font-size="10" fill="#555">• Marine ecosystem health</text>
+  
+  <!-- Open Ocean Deployments -->
+  <circle cx="850" cy="180" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="850" y="200" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-O01</text>
+  
+  <circle cx="950" cy="220" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="950" y="240" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-O02</text>
+  
+  <circle cx="1050" cy="180" r="12" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="1050" y="200" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-O03</text>
+  
+  <!-- Floating Platforms -->
+  <rect x="880" y="260" width="30" height="20" fill="#795548" stroke="#5d4037" stroke-width="2" rx="5"/>
+  <text x="895" y="285" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#5d4037">Platform-1</text>
+  
+  <rect x="1020" y="280" width="30" height="20" fill="#795548" stroke="#5d4037" stroke-width="2" rx="5"/>
+  <text x="1035" y="305" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#5d4037">Platform-2</text>
+  
+  <!-- Ocean Monitoring Details -->
+  <text x="770" y="350" font-family="Arial, sans-serif" font-size="10" fill="#555">• Deepwater monitoring</text>
+  <text x="770" y="365" font-family="Arial, sans-serif" font-size="10" fill="#555">• Shipping lane surveillance</text>
+  <text x="770" y="380" font-family="Arial, sans-serif" font-size="10" fill="#555">• Microplastic drift tracking</text>
+  
+  <!-- Urban Water Source Deployments -->
+  <circle cx="150" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="150" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-U01</text>
+  
+  <circle cx="200" cy="550" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="570" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-U02</text>
+  
+  <circle cx="280" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="280" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-U03</text>
+  
+  <!-- Water Treatment Integration -->
+  <rect x="180" y="580" width="40" height="25" fill="#2196f3" stroke="#1976d2" stroke-width="2" rx="3"/>
+  <text x="200" y="597" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#1976d2">WTP-01</text>
+  
+  <rect x="250" y="580" width="40" height="25" fill="#2196f3" stroke="#1976d2" stroke-width="2" rx="3"/>
+  <text x="270" y="597" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#1976d2">WTP-02</text>
+  
+  <!-- Urban Details -->
+  <text x="120" y="620" font-family="Arial, sans-serif" font-size="10" fill="#555">• Drinking water protection</text>
+  <text x="120" y="635" font-family="Arial, sans-serif" font-size="10" fill="#555">• Treatment plant integration</text>
+  
+  <!-- Agricultural Deployments -->
+  <circle cx="450" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="450" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-A01</text>
+  
+  <circle cx="550" cy="550" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="550" y="570" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-A02</text>
+  
+  <circle cx="650" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="650" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-A03</text>
+  
+  <!-- Irrigation System Integration -->
+  <rect x="480" y="580" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="488" y="605" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#f57c00">IRR-01</text>
+  
+  <rect x="580" y="580" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="588" y="605" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#f57c00">IRR-02</text>
+  
+  <!-- Agricultural Details -->
+  <text x="420" y="620" font-family="Arial, sans-serif" font-size="10" fill="#555">• Irrigation water monitoring</text>
+  <text x="420" y="635" font-family="Arial, sans-serif" font-size="10" fill="#555">• Crop protection systems</text>
+  
+  <!-- Remote Watershed Deployments -->
+  <circle cx="800" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="800" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-R01</text>
+  
+  <circle cx="900" cy="550" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="900" y="570" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-R02</text>
+  
+  <circle cx="1000" cy="520" r="10" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="1000" y="540" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-R03</text>
+  
+  <!-- Solar Power Stations -->
+  <rect x="850" y="580" width="25" height="15" fill="#ffeb3b" stroke="#fbc02d" stroke-width="2" rx="3"/>
+  <text x="862" y="605" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#fbc02d">Solar-1</text>
+  
+  <rect x="950" y="580" width="25" height="15" fill="#ffeb3b" stroke="#fbc02d" stroke-width="2" rx="3"/>
+  <text x="962" y="605" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#fbc02d">Solar-2</text>
+  
+  <!-- Remote Details -->
+  <text x="770" y="620" font-family="Arial, sans-serif" font-size="10" fill="#555">• Watershed source protection</text>
+  <text x="770" y="635" font-family="Arial, sans-serif" font-size="10" fill="#555">• Off-grid solar power</text>
+  
+  <!-- Freshwater System Deployments -->
+  <circle cx="520" cy="230" r="8" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="520" y="250" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-F01</text>
+  
+  <circle cx="580" cy="260" r="8" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="580" y="280" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#2e7d32">SBP-F02</text>
+  
+  <!-- Communication Network Overlay -->
+  <!-- LoRaWAN Coverage -->
+  <circle cx="225" cy="320" r="80" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <text x="225" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#4caf50">LoRaWAN Coverage</text>
+  
+  <circle cx="550" cy="550" r="80" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <circle cx="900" cy="550" r="80" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <!-- 5G Coverage -->
+  <rect x="100" y="450" width="250" height="100" fill="none" stroke="#e91e63" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  <text x="225" y="440" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#e91e63">5G Coverage</text>
+  
+  <!-- Satellite Coverage Indication -->
+  <ellipse cx="600" cy="400" rx="550" ry="350" fill="none" stroke="#673ab7" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+  <text x="1100" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#673ab7">Global Satellite Coverage</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="700" width="1100" height="80" fill="#fff" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="70" y="720" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Deployment Legend:</text>
+  
+  <!-- Legend Items -->
+  <circle cx="100" cy="735" r="8" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="120" y="740" font-family="Arial, sans-serif" font-size="10" fill="#555">Smart Bio-Pod (SBP)</text>
+  
+  <rect x="220" y="727" width="16" height="16" fill="#ff9800" stroke="#f57c00" stroke-width="2" rx="2"/>
+  <text x="245" y="738" font-family="Arial, sans-serif" font-size="10" fill="#555">Soil Sentinel Probe (SSP)</text>
+  
+  <polygon points="380,730 395,725 410,730 395,735" fill="#9c27b0" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="420" y="735" font-family="Arial, sans-serif" font-size="10" fill="#555">Mobile Remediation Drone</text>
+  
+  <rect x="580" y="727" width="25" height="15" fill="#2196f3" stroke="#1976d2" stroke-width="2" rx="3"/>
+  <text x="615" y="738" font-family="Arial, sans-serif" font-size="10" fill="#555">Water Treatment Plant</text>
+  
+  <rect x="750" y="727" width="25" height="15" fill="#ffeb3b" stroke="#fbc02d" stroke-width="2" rx="3"/>
+  <text x="785" y="738" font-family="Arial, sans-serif" font-size="10" fill="#555">Solar Power Station</text>
+  
+  <rect x="900" y="727" width="30" height="15" fill="#795548" stroke="#5d4037" stroke-width="2" rx="5"/>
+  <text x="940" y="738" font-family="Arial, sans-serif" font-size="10" fill="#555">Floating Platform</text>
+  
+  <!-- Coverage Legend -->
+  <text x="70" y="760" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Communication Coverage:</text>
+  
+  <circle cx="220" cy="765" r="15" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="245" y="770" font-family="Arial, sans-serif" font-size="10" fill="#555">LoRaWAN (15km range)</text>
+  
+  <rect x="360" y="755" width="30" height="20" fill="none" stroke="#e91e63" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="400" y="768" font-family="Arial, sans-serif" font-size="10" fill="#555">5G Cellular</text>
+  
+  <ellipse cx="520" cy="765" rx="25" ry="15" fill="none" stroke="#673ab7" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="555" y="770" font-family="Arial, sans-serif" font-size="10" fill="#555">Satellite (Global)</text>
+  
+  <!-- Deployment Statistics -->
+  <text x="700" y="755" font-family="Arial, sans-serif" font-size="10" fill="#555">Total Deployment: 50 Bio-Pods | 30 Soil Probes | 15 Drones | 95% Coverage</text>
+  <text x="700" y="770" font-family="Arial, sans-serif" font-size="10" fill="#555">Monitoring Capacity: 500 km² per zone | Real-time Health Alerts | 24/7 Operations</text>
+</svg>
